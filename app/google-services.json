@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "518913576441",
+    "firebase_url": "https://tnbbs-ticket-bbd6c-default-rtdb.firebaseio.com",
+    "project_id": "tnbbs-ticket-bbd6c",
+    "storage_bucket": "tnbbs-ticket-bbd6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518913576441:android:312fe98f3f2e9578ca8128",
+        "android_client_info": {
+          "package_name": "com.app.tnbbs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG4LLR2jSEyTWryH0_iDwfRynO5qgSZRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518913576441:android:13c4d0619ee9bcbaca8128",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG4LLR2jSEyTWryH0_iDwfRynO5qgSZRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

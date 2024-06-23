@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_user"
+    app:startDestination="@id/homeBerandaFragment">
+
+    <fragment
+        android:id="@+id/homeBerandaFragment"
+        android:name="com.app.tnbbs.view.user.home.HomeBerandaFragment"
+        android:label="fragment_home_beranda"
+        tools:layout="@layout/fragment_home_beranda" >
+        <action
+            android:id="@+id/action_homeBerandaFragment_to_informasiWisataFragment"
+            app:destination="@id/informasiWisataFragment" />
+        <action
+            android:id="@+id/action_homeBerandaFragment_to_homePesanTiketFragment"
+            app:destination="@id/homePesanTiketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeTiketFragment"
+        android:name="com.app.tnbbs.view.user.histori.HomeTiketFragment"
+        android:label="fragment_home_tiket"
+        tools:layout="@layout/fragment_home_tiket" >
+        <action
+            android:id="@+id/action_homeTiketFragment_to_detailTiketFragment"
+            app:destination="@id/detailTiketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.app.tnbbs.view.profil.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" >
+        <action
+            android:id="@+id/action_profilFragment_to_bantuanFragment"
+            app:destination="@id/bantuanFragment" />
+        <action
+            android:id="@+id/action_profilFragment_to_editProfilFragment"
+            app:destination="@id/editProfilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bantuanFragment"
+        android:name="com.app.tnbbs.view.profil.BantuanFragment"
+        android:label="fragment_bantuan"
+        tools:layout="@layout/fragment_bantuan" />
+    <fragment
+        android:id="@+id/editProfilFragment"
+        android:name="com.app.tnbbs.view.profil.EditProfilFragment"
+        android:label="fragment_edit_profil"
+        tools:layout="@layout/fragment_edit_profil" >
+        <action
+            android:id="@+id/action_editProfilFragment_to_profilFragment2"
+            app:destination="@id/profilFragment"
+            app:popUpTo="@id/editProfilFragment"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/informasiWisataFragment"
+        android:name="com.app.tnbbs.view.user.informasi.InformasiWisataFragment"
+        android:label="fragment_informasi_wisata"
+        tools:layout="@layout/fragment_informasi_wisata" >
+        <action
+            android:id="@+id/action_informasiWisataFragment_to_detailInformasiWisataFragment"
+            app:destination="@id/detailInformasiWisataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailTiketFragment"
+        android:name="com.app.tnbbs.view.user.histori.DetailTiketFragment"
+        android:label="fragment_detail_tiket"
+        tools:layout="@layout/fragment_detail_tiket" />
+    <fragment
+        android:id="@+id/detailWisataFragment"
+        android:name="com.app.tnbbs.view.user.etiket.DetailPesanWisataFragment"
+        android:label="fragment_detail_wisata"
+        tools:layout="@layout/fragment_detail_wisata" >
+        <action
+            android:id="@+id/action_detailWisataFragment_to_inputTransaksiFragment"
+            app:destination="@id/inputTransaksiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePesanTiketFragment"
+        android:name="com.app.tnbbs.view.user.etiket.HomePesanTiketFragment"
+        android:label="fragment_home_pesan_tiket"
+        tools:layout="@layout/fragment_home_pesan_tiket" >
+        <action
+            android:id="@+id/action_homePesanTiketFragment_to_laporanDanAnalisaFragment"
+            app:destination="@id/laporanDanAnalisaFragment" />
+        <action
+            android:id="@+id/action_homePesanTiketFragment_to_alurPenggunaFragment"
+            app:destination="@id/alurPenggunaFragment" />
+        <action
+            android:id="@+id/action_homePesanTiketFragment_to_daftarWisataFragment"
+            app:destination="@id/daftarWisataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputTransaksiFragment"
+        android:name="com.app.tnbbs.view.user.etiket.InputTransaksiFragment"
+        android:label="fragment_input_transaksi"
+        tools:layout="@layout/fragment_input_transaksi" >
+        <action
+            android:id="@+id/action_inputTransaksiFragment_to_rincianTransaksiFragment"
+            app:destination="@id/rincianTransaksiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rincianTransaksiFragment"
+        android:name="com.app.tnbbs.view.user.etiket.RincianTransaksiFragment"
+        android:label="fragment_rincian_transaksi"
+        tools:layout="@layout/fragment_rincian_transaksi" >
+        <action
+            android:id="@+id/action_rincianTransaksiFragment_to_pembayaranFragment"
+            app:destination="@id/pembayaranFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailInformasiWisataFragment"
+        android:name="com.app.tnbbs.view.user.informasi.DetailInformasiWisataFragment"
+        android:label="fragment_detail_informasi_wisata"
+        tools:layout="@layout/fragment_detail_informasi_wisata" />
+    <fragment
+        android:id="@+id/pembayaranFragment"
+        android:name="com.app.tnbbs.view.user.etiket.PembayaranFragment"
+        android:label="fragment_pembayaran"
+        tools:layout="@layout/fragment_pembayaran" >
+        <action
+            android:id="@+id/action_pembayaranFragment_to_homeBerandaFragment"
+            app:destination="@id/homeBerandaFragment"
+            app:popUpTo="@id/pembayaranFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/alurPenggunaFragment"
+        android:name="com.app.tnbbs.view.user.alurpengguna.AlurPenggunaFragment"
+        android:label="fragment_alur_pengguna"
+        tools:layout="@layout/fragment_alur_pengguna" />
+    <fragment
+        android:id="@+id/laporanDanAnalisaFragment"
+        android:name="com.app.tnbbs.view.laporandananalisa.LaporanDanAnalisaFragment"
+        android:label="fragment_laporan_dan_analisa"
+        tools:layout="@layout/fragment_laporan_dan_analisa" />
+    <fragment
+        android:id="@+id/daftarWisataFragment"
+        android:name="com.app.tnbbs.view.user.etiket.DaftarWisataFragment"
+        android:label="fragment_daftar_wisata"
+        tools:layout="@layout/fragment_daftar_wisata" >
+        <action
+            android:id="@+id/action_daftarWisataFragment_to_detailWisataFragment"
+            app:destination="@id/detailWisataFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="15dp"
+    android:elevation="0dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="73dp">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="73dp"
+            android:layout_height="73dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gajah"
+            android:layout_alignParentStart="true"
+
+            />
+
+        <TextView
+            android:id="@+id/tvNamaWisata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berkemah"
+            android:layout_toRightOf="@id/ivImage"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

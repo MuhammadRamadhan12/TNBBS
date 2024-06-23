@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_admin"
+    app:startDestination="@id/homeBerandaAdminFragment">
+
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.app.tnbbs.view.profil.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" >
+        <action
+            android:id="@+id/action_profilFragment_to_bantuanFragment"
+            app:destination="@id/bantuanFragment" />
+        <action
+            android:id="@+id/action_profilFragment_to_editProfilFragment"
+            app:destination="@id/editProfilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bantuanFragment"
+        android:name="com.app.tnbbs.view.profil.BantuanFragment"
+        android:label="fragment_bantuan"
+        tools:layout="@layout/fragment_bantuan" />
+    <fragment
+        android:id="@+id/editProfilFragment"
+        android:name="com.app.tnbbs.view.profil.EditProfilFragment"
+        android:label="fragment_edit_profil"
+        tools:layout="@layout/fragment_edit_profil" >
+        <action
+            android:id="@+id/action_editProfilFragment_to_profilFragment"
+            app:destination="@id/profilFragment"
+            app:popUpTo="@id/editProfilFragment"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/homeBerandaAdminFragment"
+        android:name="com.app.tnbbs.view.admin.home.HomeBerandaAdminFragment"
+        android:label="fragment_home_beranda_admin"
+        tools:layout="@layout/fragment_home_beranda_admin" >
+        <action
+            android:id="@+id/action_homeBerandaAdminFragment_to_laporanDanAnalisaFragment"
+            app:destination="@id/laporanDanAnalisaFragment" />
+        <action
+            android:id="@+id/action_homeBerandaAdminFragment_to_kelolaTiketAdminFragment"
+            app:destination="@id/kelolaTiketAdminFragment" />
+        <action
+            android:id="@+id/action_homeBerandaAdminFragment_to_informasiWisataAdminFragment"
+            app:destination="@id/informasiWisataAdminFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/informasiWisataAdminFragment"
+        android:name="com.app.tnbbs.view.admin.kelolawisata.InformasiWisataAdminFragment"
+        android:label="fragment_informasi_wisata_admin"
+        tools:layout="@layout/fragment_informasi_wisata_admin" >
+        <action
+            android:id="@+id/action_informasiWisataAdminFragment_to_updateWisataFragment"
+            app:destination="@id/updateWisataFragment" />
+        <action
+            android:id="@+id/action_informasiWisataAdminFragment_to_detailInformasiWisataAdminFragment"
+            app:destination="@id/detailInformasiWisataAdminFragment" />
+        <action
+            android:id="@+id/action_informasiWisataAdminFragment_to_tambahWisataFragment"
+            app:destination="@id/tambahWisataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailInformasiWisataAdminFragment"
+        android:name="com.app.tnbbs.view.admin.kelolawisata.DetailInformasiWisataAdminFragment"
+        android:label="fragment_detail_informasi_wisata_admin"
+        tools:layout="@layout/fragment_detail_informasi_wisata_admin" >
+        <action
+            android:id="@+id/action_detailInformasiWisataAdminFragment_to_updateWisataFragment"
+            app:destination="@id/updateWisataFragment" />
+        <action
+            android:id="@+id/action_detailInformasiWisataAdminFragment_to_tambahWisataFragment"
+            app:destination="@id/tambahWisataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateWisataFragment"
+        android:name="com.app.tnbbs.view.admin.kelolawisata.UpdateWisataFragment"
+        android:label="fragment_update_wisata"
+        tools:layout="@layout/fragment_update_wisata" >
+        <action
+            android:id="@+id/action_updateWisataFragment_to_informasiWisataAdminFragment"
+            app:destination="@id/informasiWisataAdminFragment"
+            app:popUpTo="@id/updateWisataFragment"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/kelolaTiketAdminFragment"
+        android:name="com.app.tnbbs.view.admin.kelolatiket.KelolaTiketAdminFragment"
+        android:label="fragment_kelola_tiket_admin"
+        tools:layout="@layout/fragment_kelola_tiket_admin" >
+        <action
+            android:id="@+id/action_kelolaTiketAdminFragment_to_konfirmasiTiketFragment"
+            app:destination="@id/konfirmasiTiketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/konfirmasiTiketFragment"
+        android:name="com.app.tnbbs.view.admin.kelolatiket.KonfirmasiTiketFragment"
+        android:label="fragment_konfirmasi_tiket"
+        tools:layout="@layout/fragment_konfirmasi_tiket" >
+        <action
+            android:id="@+id/action_konfirmasiTiketFragment_to_kelolaTiketAdminFragment"
+            app:destination="@id/kelolaTiketAdminFragment"
+            app:popUpTo="@id/konfirmasiTiketFragment"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/laporanDanAnalisaFragment"
+        android:name="com.app.tnbbs.view.laporandananalisa.LaporanDanAnalisaFragment"
+        android:label="fragment_laporan_dan_analisa"
+        tools:layout="@layout/fragment_laporan_dan_analisa" />
+    <fragment
+        android:id="@+id/tambahWisataFragment"
+        android:name="com.app.tnbbs.view.admin.kelolawisata.TambahWisataFragment"
+        android:label="fragment_tambah_wisata"
+        tools:layout="@layout/fragment_tambah_wisata" >
+        <action
+            android:id="@+id/action_tambahWisataFragment_to_informasiWisataAdminFragment"
+            app:destination="@id/informasiWisataAdminFragment"
+            app:popUpTo="@id/tambahWisataFragment"
+            app:popUpToInclusive="true"
+            />
+
+    </fragment>
+    <fragment
+        android:id="@+id/detailTiketAdminFragment"
+        android:name="com.app.tnbbs.view.admin.histori.DetailTiketAdminFragment"
+        android:label="fragment_detail_tiket_admin"
+        tools:layout="@layout/fragment_detail_tiket_admin" />
+    <fragment
+        android:id="@+id/homeTiketAdminFragment"
+        android:name="com.app.tnbbs.view.admin.histori.HomeTiketAdminFragment"
+        android:label="fragment_home_tiket_admin"
+        tools:layout="@layout/fragment_home_tiket_admin" >
+        <action
+            android:id="@+id/action_homeTiketAdminFragment_to_detailTiketAdminFragment"
+            app:destination="@id/detailTiketAdminFragment" />
+    </fragment>
+</navigation>

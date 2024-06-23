@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.admin.kelolawisata.DetailInformasiWisataAdminFragment">
+
+    <FrameLayout
+        android:backgroundTint="#00000000"
+
+        android:id="@+id/frameLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/ivWisata"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:src="@drawable/gajah"
+            android:scaleType="centerCrop"
+            />
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:backgroundTint="#00000000"
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <androidx.appcompat.widget.Toolbar
+                android:backgroundTint="#00000000"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+
+                        android:id="@+id/btnBack"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Button Back"
+                        android:src="@drawable/baseline_arrow_back_ios_24"
+                        />
+
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+    </FrameLayout>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/rounded_background">
+
+            <TextView
+                android:id="@+id/tvNamaWisata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berkemah"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:fontFamily="@font/poppins_bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/tvDeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nikmati pengalaman berkemah yang tak terlupakan di Kawasan Taman Nasional Bukit Barisan Selatan. Di sini, Anda akan disuguhi pemandangan alam yang menakjubkan, mulai dari pegunungan yang menjulang tinggi, hutan yang rimbun, hingga sungai yang jernih. Kegiatan berkemah ini dirancang untuk memberikan keseimbangan sempurna antara petualangan dan relaksasi."
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins"
+                android:lineSpacingExtra="5dp"
+                android:justificationMode="inter_word"
+
+                />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga Tiket Kegiatan"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/tvHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Rp.5.000 /orang/hari"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins"
+                android:textSize="13sp"
+
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lokasi"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/tvLokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Ciwidey, Bandung, Jawa Barat, Indonesia"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins"
+                android:textSize="13sp"
+
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biaya Tambahan"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="13sp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Tiket Masuk"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins"
+                android:textSize="13sp"
+
+                />
+
+            <TextView
+                android:id="@+id/tvTiketMasukWNI"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="WNI : Rp.5000 - Rp.7.500"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins"
+                android:textSize="13sp"
+
+                />
+
+            <TextView
+                android:id="@+id/tvTiketMasukWNA"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="WNA : Rp.150.000 - Rp.225.000"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins"
+                android:textSize="13sp"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/buttonContainer"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnHapus"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Hapus"
+                    app:iconGravity="end"
+                    app:icon="@drawable/delete"
+                    app:iconTint="#FF0000"
+                    android:textColor="@android:color/black"
+                    app:cornerRadius="15dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Edit"
+                    app:iconGravity="end"
+                    app:icon="@drawable/edit"
+                    app:iconTint="#47C0F3"
+                    android:textColor="@android:color/black"
+                    app:cornerRadius="15dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
